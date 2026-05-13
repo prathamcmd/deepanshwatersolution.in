@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Deepansh Water Solution</title>
+<link rel="shortcut icon" href="../favico.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="contact.css">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WMPXXLEXDP">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WMPXXLEXDP');
+</script>
+</head>
+<body>
+
+<!-- ════════ HEADER ════════ -->
+<header id="mainHeader">
+  <div class="container navbar navbar-home">
+    <a class="logo" href="/">
+      <img src="../images_dws/deepansh-water-solution-logo.png" alt="Deepansh Water Solution logo">
+      <div class="logo-text">
+        <span class="logo-name">Deepansh Water Solution</span>
+        <span class="logo-sub">Irrigation & Water Management</span>
+      </div>
+    </a>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    <nav class="home-nav">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/portal">Client Portal</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li class="nav-mobile-cta"><a href="/contact" class="nav-cta active">Get a Quote</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a href="/contact" class="nav-cta nav-cta-desktop">Get a Quote</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ════════ PAGE HERO ════════ -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Get In Touch</h1>
+    <p>Reach out for professional consultation, project quotes, or any enquiries. Our team responds within 24 hours.</p>
+  </div>
+</section>
+
+
+<!-- ════════ CONTACT MAIN ════════ -->
+<section class="contact-main" id="contact_form">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- ── Left: Info ── -->
+      <div class="contact-info reveal">
+        <h2>We'd Love to Hear From You</h2>
+        <p>Whether you need a quote for a new irrigation project, want to discuss AMC options, or simply want to learn more about our services — we're ready to help.</p>
+
+        <div class="contact-highlights">
+          <span>24h Response</span>
+          <span>Pan-India Support</span>
+          <span>Site Visit Assistance</span>
+        </div>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="info-text">
+              <h4>Phone</h4>
+              <p>+91 8368757030</p>
+              <span>Monday – Saturday, 8 AM – 6 PM</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="info-text">
+              <h4>Email</h4>
+              <p>deepanshwater@gmail.com</p>
+              <span>Response within 24 hours</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-text">
+              <h4>Office Address</h4>
+              <p>Tilpat Road, Palla, Faridabad, Haryana</p>
+              <span>India — 121003</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="info-text">
+              <h4>Working Hours</h4>
+              <p>Monday – Saturday</p>
+              <span>8:00 AM – 6:00 PM IST</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <h4>Follow Us</h4>
+          <div class="social-row">
+            <a href="https://instagram.com/deepanshwatersolution" target="_blank" class="soc-btn instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@deepanshwater" target="_blank" class="soc-btn youtube"><i class="fab fa-youtube"></i></a>
+            <a href="https://facebook.com/yourpage" target="_blank" class="soc-btn facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/8130201945" target="_blank" class="soc-btn"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-side-note">
+          <strong>Project-ready support</strong>
+          <span>Share your location, site size, and requirement. We will help you move from enquiry to proposal smoothly.</span>
+        </div>
+      </div>
+
+      <!-- ── Right: Form ── -->
+      <div class="contact-form-wrap reveal reveal-delay-2">
+        <h2>Request a Quote</h2>
+        <p>Fill in the form below and we'll get back to you with a detailed proposal.</p>
+
+        <!-- Form -->
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="organization">Organisation / Institution</label>
+            <input type="text" id="organization" name="organization" placeholder="Company or institution name (optional)">
+          </div>
+
+          <div class="form-group">
+            <label for="project_type">Service Required *</label>
+            <select id="project_type" name="project_type" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option>Institutional Irrigation System</option>
+              <option>Sports Ground Irrigation</option>
+              <option>Commercial Landscape Sprinklers</option>
+              <option>Dust Suppression System</option>
+              <option>Solar Panel Cleaning System</option>
+              <option>Annual Maintenance Contract (AMC)</option>
+              <option>General Consultation</option>
+              <option>Store Visit</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project — area size, location, requirements, timeline..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
+
+        <!-- Success State -->
+        <div class="form-success" id="formSuccess">
+          <i class="fa-solid fa-circle-check"></i>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. Our team will review your enquiry and get back to you within 24 hours.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════ FOOTER ════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">
+          <img src="../images_dws/deepansh-water-solution-logo.png" alt="Deepansh Water Solution logo">
+          <div class="logo-text">
+            <span class="logo-name" style="color:#fff;">Deepansh Water Solution</span>
+            <span class="logo-sub">Irrigation & Water Management</span>
+          </div>
+        </div>
+        <p>Delivering professional irrigation and water management solutions for institutions, sports complexes, and commercial landscapes across India.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/deepanshwatersolution" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@deepanshwater" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+          <a href="https://facebook.com/yourpage" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/portal">Client Portal</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services#institutional">Institutional Irrigation</a></li>
+          <li><a href="/services#sports">Sports Ground</a></li>
+          <li><a href="/services#commercial">Commercial Landscape</a></li>
+          <li><a href="/services#amc">AMC</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="text">Tilpat Road, Palla, Faridabad,<br>Haryana — 121003</div>
+          </li>
+          <li>
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="text">+91 8368757030</div>
+          </li>
+          <li>
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="text">deepanshwater@gmail.com</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Deepansh Water Solution. All Rights Reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-socials" aria-label="Social media links">
+  <a href="https://www.instagram.com/deepanshwatersolution/" class="floating-social instagram" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.youtube.com/@deepanshwater" class="floating-social youtube" target="_blank" rel="noopener" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://www.linkedin.com/" class="floating-social linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://wa.me/8368757030?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20work.%20Please%20share%20details" class="floating-social whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+</div>
+
+<!-- EmailJS init -->
+<script>
+  emailjs.init("eBZ_uVT8JLmbcy2Ew");
+</script>
+<script src="../javascript.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

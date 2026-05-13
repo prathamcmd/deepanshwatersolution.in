@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" sizes="48x48" href="favico.png">
+<link rel="shortcut icon" href="favico.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Deepansh Water Solution — Professional irrigation and water management solutions for institutions, sports complexes, and commercial landscapes.">
+  <title>Deepansh Water Solution | Professional Irrigation Systems</title>
+<meta name="description" content="Deepansh Water Solution provides advanced irrigation systems, solar module arrays and smart water management solutions in India.">
+<meta name="keywords" content="irrigation system, solar water pump, water management India, smart irrigation, DWS">
+<meta name="author" content="Deepansh Water Solution">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WMPXXLEXDP">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WMPXXLEXDP');
+</script>
+</head>
+<body>
+
+<!-- ════════════════════════════
+     HEADER
+═════════════════════════════════ -->
+<header id="mainHeader">
+  <div class="container navbar navbar-home">
+
+    <a class="logo" href="/">
+      <img src="images_dws/deepansh-water-solution-logo.png" alt="Deepansh Water Solution logo">
+      <div class="logo-text">
+        <span class="logo-name">Deepansh Water Solution</span>
+        <span class="logo-sub">Irrigation & Water Management</span>
+      </div>
+    </a>
+
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="home-nav">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/portal">Client Portal</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li class="nav-mobile-cta"><a href="/contact" class="nav-cta">Get a Quote</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="/contact" class="nav-cta nav-cta-desktop">Get a Quote</a>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- ════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg" id="heroBackground" aria-hidden="true">
+    <div class="hero-bg-layer is-active" style="background-image: url('images_dws/hero/bg1.png');"></div>
+    <div class="hero-bg-layer" style="background-image: url('images_dws/hero/bg2.jpg');"></div>
+    <div class="hero-bg-layer" style="background-image: url('images_dws/hero/bg3.webp');"></div>
+    <div class="hero-bg-layer" style="background-image: url('images_dws/hero/bg4.png');"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-bg-spotlight"></div>
+  </div>
+  <div class="hero-decor-1"></div>
+  <div class="hero-decor-2"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-bg-nav" aria-label="Hero background slides">
+    <button type="button" class="hero-bg-dot is-active" aria-label="Show hero image 1"></button>
+    <button type="button" class="hero-bg-dot" aria-label="Show hero image 2"></button>
+    <button type="button" class="hero-bg-dot" aria-label="Show hero image 3"></button>
+    <button type="button" class="hero-bg-dot" aria-label="Show hero image 4"></button>
+  </div>
+
+  <div class="container">
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <i class="fa-solid fa-water"></i>
+        Irrigation Design, Installation And AMC Support
+      </div>
+
+      <h1>
+        Smart Irrigation for
+        <em>Campuses, Landscapes And Sports Sites</em>
+      </h1>
+
+      <p class="hero-desc">
+        We design, install, and maintain efficient irrigation systems for institutions, commercial landscapes, and sports facilities across India.
+      </p>
+
+      <div class="hero-actions">
+        <a href="/contact#contact_form" class="btn btn-primary hero-btn hero-btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> Get Free Quote
+        </a>
+        <a href="/services" class="btn btn-outline hero-btn hero-btn-secondary">
+          <i class="fa-solid fa-screwdriver-wrench"></i> Services
+        </a>
+        <a href="/projects" class="btn btn-outline hero-btn hero-btn-secondary">
+          <i class="fa-solid fa-images"></i> View Projects
+        </a>
+        <a href="/portal" class="btn btn-outline hero-btn hero-btn-tertiary">
+          <i class="fa-solid fa-id-card"></i> Client Portal
+        </a>
+        <a href="/blog" class="btn btn-outline hero-btn hero-btn-tertiary">
+          <i class="fa-solid fa-book-open"></i> Blog
+        </a>
+        <a href="/about#gallery" class="btn btn-outline hero-btn hero-btn-tertiary">
+          <i class="fa-solid fa-image"></i> Gallery
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-panel hero-showcase reveal" id="heroShowcase">
+      <div class="hero-panel-top">
+        <p class="hero-panel-title">Project Footprint</p>
+        <p class="hero-panel-subtitle">Selected project locations and execution reach across India.</p>
+      </div>
+
+      <div class="hero-showcase-stage">
+        <div class="hero-ops-card">
+          <div class="hero-ops-header compact">
+            <div>
+              <span class="hero-ops-kicker">Operational Reach</span>
+              <h3>Execution network led from Faridabad, Haryana</h3>
+            </div>
+            <span class="hero-ops-pill">Coverage</span>
+          </div>
+
+          <div class="hero-static-map">
+            <div class="hero-static-map-glow"></div>
+            <div id="heroMap" class="hero-live-map" aria-label="Interactive India project map"></div>
+          </div>
+
+          <div class="hero-metric-strip">
+            <div class="hero-metric-card">
+              <span class="hero-metric-label">Coverage</span>
+              <strong class="hero-metric-value">18+ States</strong>
+            </div>
+            <div class="hero-metric-card">
+              <span class="hero-metric-label">Projects</span>
+              <strong class="hero-metric-value">250+ Sites</strong>
+            </div>
+            <div class="hero-metric-card">
+              <span class="hero-metric-label">Support</span>
+              <strong class="hero-metric-value">Design + AMC</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     TRUST BAR
+════════════════════════════════════════════ -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-item">
+      <i class="fa-solid fa-shield-halved"></i>
+      <div class="trust-text">
+        <strong>ISO Certified</strong>
+        Quality Assured
+      </div>
+    </div>
+    <div class="trust-item">
+      <i class="fa-solid fa-leaf"></i>
+      <div class="trust-text">
+        <strong>Water-Smart</strong>
+        Up to 60% savings
+      </div>
+    </div>
+    <div class="trust-item">
+      <i class="fa-solid fa-headset"></i>
+      <div class="trust-text">
+        <strong>AMC Support</strong>
+        Long-term maintenance
+      </div>
+    </div>
+    <div class="trust-item">
+      <i class="fa-solid fa-clock-rotate-left"></i>
+      <div class="trust-text">
+        <strong>On-Time Delivery</strong>
+        Project guaranteed
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="home-access-section">
+  <div class="container">
+    <div class="home-access-header">
+      <p class="section-label">Digital Experience</p>
+      <h2 class="section-heading">Manage Projects And Explore Insights</h2>
+      <p class="section-sub">Give clients a direct access route to live project updates while helping new visitors learn through useful irrigation and landscaping articles.</p>
+    </div>
+
+    <div class="home-access-grid">
+      <article class="home-access-card reveal">
+        <div class="home-access-card-top">
+          <span class="home-access-badge">Client Portal</span>
+          <div class="home-access-icon"><i class="fa-solid fa-id-card"></i></div>
+        </div>
+        <h3>Track project progress with one secure ID.</h3>
+        <p>Clients can open their dedicated dashboard, check progress status, download shared documents, and view site photo updates from one place.</p>
+        <div class="home-access-points">
+          <span><i class="fa-solid fa-check"></i> Live project status</span>
+          <span><i class="fa-solid fa-check"></i> Documents and drawings</span>
+          <span><i class="fa-solid fa-check"></i> Site photo updates</span>
+        </div>
+        <div class="home-access-actions">
+          <a href="/portal" class="btn btn-primary">
+            Open Client Portal <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <article class="home-access-card home-access-card--blog reveal reveal-delay-1">
+        <div class="home-access-card-top">
+          <span class="home-access-badge">Knowledge Hub</span>
+          <div class="home-access-icon home-access-icon--gold"><i class="fa-solid fa-book-open"></i></div>
+        </div>
+        <h3>Read practical blogs before planning your next landscape.</h3>
+        <p>Our blog helps visitors understand irrigation choices, low-maintenance design ideas, and smarter outdoor planning before starting a project.</p>
+        <div class="home-blog-mini-list">
+          <a href="/blog/drip-irrigation-vs-sprinkler" class="home-blog-mini-item">
+            <strong>Drip Irrigation vs Sprinkler</strong>
+            <span>Water-saving comparison guide</span>
+          </a>
+          <a href="/blog/low-maintenance-garden-ideas-india" class="home-blog-mini-item">
+            <strong>Low Maintenance Garden Ideas in India</strong>
+            <span>Practical landscape planning tips</span>
+          </a>
+        </div>
+        <div class="home-access-actions">
+          <a href="/blog" class="btn btn-outline home-blog-btn">
+            Visit Blog <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════ -->
+<section class="services-section">
+  <div class="container">
+
+    <div class="services-header">
+      <div class="services-header-content">
+        <p class="section-label">What We Do</p>
+        <h2 class="section-heading">Our Specialisations</h2>
+        <p class="section-sub">Comprehensive irrigation and water management solutions, engineered for scale and precision.</p>
+      </div>
+      <div class="right">
+        <a href="/services" class="btn btn-primary">
+          All Services <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="services-grid">
+
+      <a href="/services#sports" class="service-card reveal">
+        <div class="service-img-wrap">
+          <img src="images_dws/services/sports-ground-irrigation.jpg" alt="Sports ground irrigation system for professional turf and landscape maintenance">
+          <div class="service-img-overlay"></div>
+          <div class="service-icon"><i class="fa-solid fa-trophy"></i></div>
+        </div>
+        <div class="service-body">
+          <h3>Sports Ground Systems</h3>
+          <p>Precision irrigation for cricket grounds, football fields, and multi-sport complexes requiring optimal turf conditions.</p>
+          <div class="service-arrow">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="/services#commercial" class="service-card reveal reveal-delay-1">
+        <div class="service-img-wrap">
+          <img src="images_dws/services/commercial-landscape-irrigation.png" alt="Commercial landscape irrigation system for campuses and business parks">
+          <div class="service-img-overlay"></div>
+          <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+        </div>
+        <div class="service-body">
+          <h3>Commercial Landscape</h3>
+          <p>Advanced sprinkler and drip systems for corporate parks, residential complexes, and commercial landscapes.</p>
+          <div class="service-arrow">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="/services#dust" class="service-card reveal reveal-delay-2">
+        <div class="service-img-wrap">
+          <img src="images_dws/services/dust-suppression-system.png" alt="Dust suppression system installation for industrial and infrastructure sites">
+          <div class="service-img-overlay"></div>
+          <div class="service-icon"><i class="fa-solid fa-wind"></i></div>
+        </div>
+        <div class="service-body">
+          <h3>Dust Suppression</h3>
+          <p>Industrial-grade misting and suppression systems for construction sites, highways, and industrial zones.</p>
+          <div class="service-arrow">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="/services#solar" class="service-card reveal reveal-delay-3">
+        <div class="service-img-wrap">
+          <img src="images_dws/services/solar-panel-cleaning-system.jpg" alt="Solar panel cleaning system installed by Deepansh Water Solution in Faridabad">
+          <div class="service-img-overlay"></div>
+          <div class="service-icon"><i class="fa-solid fa-solar-panel"></i></div>
+        </div>
+        <div class="service-body">
+          <h3>Solar Panel Cleaning</h3>
+          <p>Automated robotic washing systems for solar module arrays — maximising energy yield through maintained cleanliness.</p>
+          <div class="service-arrow">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     FEATURED PROJECTS
+════════════════════════════════════════════ -->
+<section class="home-projects">
+  <div class="container">
+
+    <div class="projects-header">
+      <div class="projects-header-content">
+        <p class="section-label">Our Work</p>
+        <h2 class="section-heading">Featured Projects</h2>
+        <p class="section-sub">Landmark installations across India's premier institutions and commercial campuses.</p>
+      </div>
+      <div class="projects-header-action">
+        <a href="/projects" class="btn btn-primary">
+          All Projects <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="projects-showcase">
+
+      <!-- Featured (large) -->
+      <div class="proj-card featured reveal">
+        <img src="images_dws/projects/iit-roorkee-campus-irrigation-2.png" alt="Automated irrigation system installed at IIT Roorkee campus">
+        <div class="proj-overlay">
+          <span class="proj-tag">Institutional</span>
+          <h3>IIT Roorkee Campus</h3>
+          <p>Fully automated irrigation system across 80+ acres of the prestigious campus.</p>
+          <div class="proj-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Roorkee, UK</span>
+            <span><i class="fa-solid fa-ruler-combined"></i> 80 acres</span>
+            <span><i class="fa-solid fa-calendar"></i> 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Small cards -->
+      <div class="proj-card reveal reveal-delay-1">
+        <img src="images_dws/projects/american-express-gurugram-irrigation-1.png" alt="Landscape irrigation project at American Express campus in Gurugram">
+        <div class="proj-overlay">
+          <span class="proj-tag">Commercial</span>
+          <h3>American Express, Gurugram</h3>
+          <p>Smart landscape sprinkler system with AMC.</p>
+          <div class="proj-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Sector 43, Gurugram</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal reveal-delay-2">
+        <img src="images_dws/projects/ved-van-park-noida-irrigation-1.png" alt="Automated irrigation project at Ved Van Park in Noida">
+        <div class="proj-overlay">
+          <span class="proj-tag">Commercial</span>
+          <h3>Ved Van Park, Noida</h3>
+          <p>Automated drip & sprinkler system for 100+ acres municipal park.</p>
+          <div class="proj-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Noida, UP</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     CTA
+════════════════════════════════════════════ -->
+<section class="brand-strip-section">
+  <div class="container">
+    <div class="brand-strip-header">
+      <p class="section-label">Preferred Components</p>
+      <h2 class="section-heading">Powered by Industry-Leading Brands</h2>
+      <p class="section-sub">We build our irrigation systems with globally trusted brands known for dependable performance, long service life, and proven field reliability.</p>
+    </div>
+
+    <div class="brand-marquee reveal">
+      <div class="brand-logo-wall brand-marquee-track">
+      <a href="https://www.netafim.com/" class="brand-tile brand-marquee-item" style="--depth-delay: 0s;" target="_blank" rel="noopener" aria-label="Netafim official website">
+        <div class="brand-logo">
+          <img src="images_dws/logo/Netafim_logo.jpg" alt="Netafim logo">
+        </div>
+        <strong>Netafim</strong>
+        <span class="brand-country">Israel</span>
+      </a>
+      <a href="https://www.hunterirrigation.com/" class="brand-tile brand-marquee-item" style="--depth-delay: -5.2s;" target="_blank" rel="noopener" aria-label="Hunter official website">
+        <div class="brand-logo">
+          <img src="https://www.hillsirrigation.com.au/wp-content/uploads/2024/10/1519849726827.png" alt="Hunter logo" onerror="this.style.display='none';this.parentElement.classList.add('logo-fallback')">
+          <span class="brand-wordmark brand-wordmark-hunter">HUNTER</span>
+        </div>
+        <strong>Hunter</strong>
+        <span class="brand-country">USA</span>
+      </a>
+      <a href="https://www.rainbird.com/" class="brand-tile brand-marquee-item" style="--depth-delay: -10.4s;" target="_blank" rel="noopener" aria-label="Rain Bird official website">
+        <div class="brand-logo">
+          <img src="images_dws/logo/rain_bird.webp" alt="Rain Bird logo">
+        </div>
+        <strong>Rain Bird</strong>
+        <span class="brand-country">USA</span>
+      </a>
+      <a href="https://yuzuak.com/" class="brand-tile brand-marquee-item" style="--depth-delay: -15.6s;" target="_blank" rel="noopener" aria-label="Yuzuak official website">
+        <div class="brand-logo">
+          <img src="images_dws/logo/yuzuak.png" alt="Yuzuak Sprinklers logo">
+        </div>
+        <strong>Yuzuak Sprinklers</strong>
+        <span class="brand-country">Turkey</span>
+      </a>
+      <a href="https://www.thetorocompany.com/" class="brand-tile brand-marquee-item" style="--depth-delay: -20.8s;" target="_blank" rel="noopener" aria-label="The Toro Company official website">
+        <div class="brand-logo">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Toro%20Logo.png" alt="The Toro Company logo" onerror="this.style.display='none';this.parentElement.classList.add('logo-fallback')">
+          <span class="brand-wordmark brand-wordmark-toro">TORO</span>
+        </div>
+        <strong>The Toro Company</strong>
+        <span class="brand-country">USA</span>
+      </a>
+      <a href="https://www.netafim.com/" class="brand-tile brand-marquee-item" style="--depth-delay: 0s;" target="_blank" rel="noopener" aria-label="Netafim official website duplicate">
+        <div class="brand-logo">
+          <img src="images_dws/logo/Netafim_logo.jpg" alt="Netafim logo">
+        </div>
+        <strong>Netafim</strong>
+        <span class="brand-country">Israel</span>
+      </a>
+      <a href="https://www.hunterirrigation.com/" class="brand-tile brand-marquee-item" style="--depth-delay: -5.2s;" target="_blank" rel="noopener" aria-label="Hunter official website duplicate">
+        <div class="brand-logo">
+          <img src="https://www.hillsirrigation.com.au/wp-content/uploads/2024/10/1519849726827.png" alt="Hunter logo" onerror="this.style.display='none';this.parentElement.classList.add('logo-fallback')">
+          <span class="brand-wordmark brand-wordmark-hunter">HUNTER</span>
+        </div>
+        <strong>Hunter</strong>
+        <span class="brand-country">USA</span>
+      </a>
+      <a href="https://www.rainbird.com/" class="brand-tile brand-marquee-item" style="--depth-delay: -10.4s;" target="_blank" rel="noopener" aria-label="Rain Bird official website duplicate">
+        <div class="brand-logo">
+          <img src="images_dws/logo/rain_bird.webp" alt="Rain Bird logo">
+        </div>
+        <strong>Rain Bird</strong>
+        <span class="brand-country">USA</span>
+      </a>
+      <a href="https://yuzuak.com/" class="brand-tile brand-marquee-item" style="--depth-delay: -15.6s;" target="_blank" rel="noopener" aria-label="Yuzuak official website duplicate">
+        <div class="brand-logo">
+          <img src="images_dws/logo/yuzuak.png" alt="Yuzuak Sprinklers logo">
+        </div>
+        <strong>Yuzuak Sprinklers</strong>
+        <span class="brand-country">Turkey</span>
+      </a>
+      <a href="https://www.thetorocompany.com/" class="brand-tile brand-marquee-item" style="--depth-delay: -20.8s;" target="_blank" rel="noopener" aria-label="The Toro Company official website duplicate">
+        <div class="brand-logo">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Toro%20Logo.png" alt="The Toro Company logo" onerror="this.style.display='none';this.parentElement.classList.add('logo-fallback')">
+          <span class="brand-wordmark brand-wordmark-toro">TORO</span>
+        </div>
+        <strong>The Toro Company</strong>
+        <span class="brand-country">USA</span>
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <p class="section-label" style="justify-content:center;">
+      <span style="width:28px;height:2px;background:var(--teal-light);display:inline-block;"></span>
+      Start Your Project
+      <span style="width:28px;height:2px;background:var(--teal-light);display:inline-block;"></span>
+    </p>
+    <h2 class="section-heading light">Ready to Transform Your Landscape?</h2>
+    <p class="section-sub light" style="margin:0 auto 44px;">
+      Partner with Deepansh Water Solution for reliable, efficient, and professional irrigation systems — backed by a team with over a decade of field experience.
+    </p>
+    <div class="cta-actions">
+      <a href="/contact#contact_form" class="btn btn-gold">
+        <i class="fa-solid fa-paper-plane"></i> Get Free Consultation
+      </a>
+      <a href="/projects" class="btn btn-outline">
+        <i class="fa-solid fa-images"></i> View Our Projects
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-about">
+        <div class="footer-logo">
+          <img src="images_dws/deepansh-water-solution-logo.png" alt="Deepansh Water Solution logo">
+          <div class="logo-text">
+            <span class="logo-name" style="color:#fff;">Deepansh Water Solution</span>
+            <span class="logo-sub">Irrigation & Water Management</span>
+          </div>
+        </div>
+        <p>Delivering professional irrigation and water management solutions for institutions, sports complexes, and commercial landscapes across India.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/deepanshwatersolution" target="_blank" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@deepanshwater" target="_blank" class="social-icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://facebook.com/yourpage" target="_blank" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/portal">Client Portal</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services#sports">Sports Ground Irrigation</a></li>
+          <li><a href="/services#commercial">Commercial Landscape</a></li>
+          <li><a href="/services#dust">Dust Suppression</a></li>
+          <li><a href="/services#solar">Solar Panel Cleaning</a></li>
+          <li><a href="/services#amc">AMC Services</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="text">Tilpat Road, Palla, Faridabad,<br>Haryana, India — 121003</div>
+          </li>
+          <li>
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="text">+91 8368757030<br><small style="opacity:.7">Mon–Sat, 8 AM–6 PM</small></div>
+          </li>
+          <li>
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="text">deepanshwater@gmail.com</div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Deepansh Water Solution. All Rights Reserved.</span>
+      <span>Designed with precision.</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- WhatsApp -->
+<div class="floating-socials" aria-label="Social media links">
+  <a href="https://www.instagram.com/deepanshwatersolution/" class="floating-social instagram" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.youtube.com/@deepanshwater" class="floating-social youtube" target="_blank" rel="noopener" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://www.linkedin.com/" class="floating-social linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://wa.me/8368757030?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20work.%20Please%20share%20details" class="floating-social whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+</div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="javascript.js"></script>
+</body>
+</html>

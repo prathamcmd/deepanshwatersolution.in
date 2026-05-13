@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Dashboard | Deepansh Water Solution</title>
+  <meta name="description" content="Dedicated Deepansh Water Solution client dashboard for viewing project progress, downloads, and site updates.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://deepanshwatersolution.in/client/">
+  <link rel="shortcut icon" href="../favico.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Global stylesheet -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Dashboard-specific stylesheet -->
+  <link rel="stylesheet" href="client.css">
+</head>
+<body class="dashboard-body">
+
+  <!-- ════════ HEADER ════════ -->
+  <header id="mainHeader">
+    <div class="container navbar">
+      <a class="logo" href="/">
+        <img src="../images_dws/deepansh-water-solution-logo.png" alt="Deepansh Water Solution logo">
+        <div class="logo-text">
+          <span class="logo-name">Deepansh Water Solution</span>
+          <span class="logo-sub">Irrigation &amp; Water Management</span>
+        </div>
+      </a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/portal" class="active">Client Portal</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact" class="nav-cta">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ════════ DASHBOARD LAYOUT ════════ -->
+  <main class="db-main">
+    <div class="db-container">
+
+      <!-- ── TOP BAR ── -->
+      <div class="db-topbar reveal">
+        <div class="db-topbar-left">
+          <nav class="db-breadcrumb">
+            <a href="/">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Client Portal</span>
+          </nav>
+          <h1 class="db-title">Project Dashboard</h1>
+          <p class="db-subtitle">Secure real-time view of your project status and documents.</p>
+        </div>
+        <div class="db-topbar-right">
+          <div class="db-live-badge">
+            <span class="db-pulse"></span>
+            Live Tracker
+          </div>
+          <div class="db-project-id-badge">
+            ID: <strong id="project_id">—</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           ROW 1 — CLIENT + STATUS
+      ═══════════════════════════════ -->
+      <div class="db-grid-2 reveal reveal-delay-1">
+
+        <!-- ── Client & Project Info Card ── -->
+        <div class="db-card db-card--info">
+          <div class="db-card-header">
+            <div class="db-card-icon"><i class="fa-solid fa-user-tie"></i></div>
+            <div>
+              <span class="db-card-label">Client &amp; Project</span>
+              <h2 class="db-card-title">Project Overview</h2>
+            </div>
+          </div>
+          <div class="db-info-grid">
+            <div class="db-info-item">
+              <span class="db-info-key"><i class="fa-solid fa-user"></i> Client Name</span>
+              <span class="db-info-val" id="client_name">—</span>
+            </div>
+            <div class="db-info-item">
+              <span class="db-info-key"><i class="fa-solid fa-hashtag"></i> Project ID</span>
+              <span class="db-info-val db-mono" id="project_id_detail">—</span>
+            </div>
+            <div class="db-info-item">
+              <span class="db-info-key"><i class="fa-solid fa-location-pin"></i> Site Name</span>
+              <span class="db-info-val" id="site_name">—</span>
+            </div>
+            <div class="db-info-item">
+              <span class="db-info-key"><i class="fa-solid fa-city"></i> City</span>
+              <span class="db-info-val" id="city">—</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Project Status Card ── -->
+        <div class="db-card db-card--status">
+          <div class="db-card-header">
+            <div class="db-card-icon db-card-icon--gold"><i class="fa-solid fa-chart-line"></i></div>
+            <div>
+              <span class="db-card-label">Current Standing</span>
+              <h2 class="db-card-title">Project Status</h2>
+            </div>
+          </div>
+
+          <!-- Status Badge + Progress -->
+          <div class="db-status-hero">
+            <span class="db-status-badge" id="status">Loading…</span>
+            <div class="db-progress-wrap">
+              <div class="db-progress-track">
+                <div class="db-progress-fill" id="progress_bar" style="width: 0%"></div>
+              </div>
+              <span class="db-progress-pct" id="progress_pct"></span>
+            </div>
+          </div>
+
+          <div class="db-info-grid">
+            <div class="db-info-item">
+              <span class="db-info-key"><i class="fa-regular fa-calendar-check"></i> ETA</span>
+              <span class="db-info-val" id="eta">—</span>
+            </div>
+            <div class="db-info-item">
+              <span class="db-info-key"><i class="fa-solid fa-helmet-safety"></i> Supervisor</span>
+              <span class="db-info-val" id="supervisor">—</span>
+            </div>
+            <div class="db-info-item">
+              <span class="db-info-key"><i class="fa-regular fa-clock"></i> Last Update</span>
+              <span class="db-info-val" id="last_update">—</span>
+            </div>
+            <div class="db-info-item db-info-item--wide">
+              <span class="db-info-key"><i class="fa-solid fa-triangle-exclamation"></i> Issues / Notes</span>
+              <span class="db-info-val db-issues-text" id="issues">No active issues reported.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           ROW 2 — DOCUMENTS
+      ═══════════════════════════════ -->
+      <div class="db-card db-card--docs reveal reveal-delay-2">
+        <div class="db-card-header">
+          <div class="db-card-icon db-card-icon--teal"><i class="fa-solid fa-folder-open"></i></div>
+          <div>
+            <span class="db-card-label">Project Files</span>
+            <h2 class="db-card-title">Documents</h2>
+          </div>
+        </div>
+        <div class="db-docs-grid" id="documents_section">
+
+          <!-- Quotation -->
+          <div class="db-doc-card" id="doc_quotation">
+            <div class="db-doc-icon">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+            </div>
+            <div class="db-doc-body">
+              <span class="db-doc-type">Quotation</span>
+              <span class="db-doc-name">Project Estimate</span>
+              <span class="db-doc-status db-doc--pending" id="quotation_status">Awaiting upload</span>
+            </div>
+            <a class="db-doc-btn" id="quotation" href="#" target="_blank" aria-label="Download quotation" data-disabled="true">
+              <i class="fa-solid fa-arrow-down-to-line"></i>
+            </a>
+          </div>
+
+          <!-- Work Order -->
+          <div class="db-doc-card" id="doc_workorder">
+            <div class="db-doc-icon db-doc-icon--blue">
+              <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <div class="db-doc-body">
+              <span class="db-doc-type">Work Order</span>
+              <span class="db-doc-name">Approved WO</span>
+              <span class="db-doc-status db-doc--pending" id="workorder_status">Awaiting upload</span>
+            </div>
+            <a class="db-doc-btn" id="workorder" href="#" target="_blank" aria-label="Download work order" data-disabled="true">
+              <i class="fa-solid fa-arrow-down-to-line"></i>
+            </a>
+          </div>
+
+          <!-- Site Drawing -->
+          <div class="db-doc-card" id="doc_sitedrawing">
+            <div class="db-doc-icon db-doc-icon--navy">
+              <i class="fa-solid fa-drafting-compass"></i>
+            </div>
+            <div class="db-doc-body">
+              <span class="db-doc-type">Site Drawing</span>
+              <span class="db-doc-name">Layout Plan</span>
+              <span class="db-doc-status db-doc--pending" id="site_drawing_status">Awaiting upload</span>
+            </div>
+            <a class="db-doc-btn" id="site_drawing" href="#" target="_blank" aria-label="Download site drawing" data-disabled="true">
+              <i class="fa-solid fa-arrow-down-to-line"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           ROW 3 — PHOTOS
+      ═══════════════════════════════ -->
+      <div class="db-card db-card--photos reveal reveal-delay-3">
+        <div class="db-card-header">
+          <div class="db-card-icon db-card-icon--green"><i class="fa-solid fa-images"></i></div>
+          <div>
+            <span class="db-card-label">Visual Progress</span>
+            <h2 class="db-card-title">Site Photos</h2>
+          </div>
+          <span class="db-photo-count" id="photo_count">0 photos</span>
+        </div>
+
+        <!-- Photo grid — populated by JS -->
+        <div class="db-photos-grid" id="photos">
+          <!-- Empty state (shown until JS populates photos) -->
+          <div class="db-empty-state" id="photos_empty">
+            <div class="db-empty-icon">
+              <i class="fa-solid fa-camera-slash"></i>
+            </div>
+            <h3>No photos yet</h3>
+            <p>Site photos will appear here as the project progresses.</p>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div><!-- /db-container -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img src="../images_dws/deepansh-water-solution-logo.png" alt="Deepansh Water Solution logo">
+            <div class="logo-text">
+              <span class="logo-name" style="color:#fff;">Deepansh Water Solution</span>
+              <span class="logo-sub">Irrigation &amp; Water Management</span>
+            </div>
+          </div>
+          <p>Delivering professional irrigation and water management solutions for institutions, sports complexes, and commercial landscapes across India.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/deepanshwatersolution" target="_blank" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@deepanshwater" target="_blank" class="social-icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://facebook.com/yourpage" target="_blank" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/portal">Client Portal</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/portal">Portal Access</a></li>
+            <li><a href="/contact#contact_form">Support</a></li>
+            <li><a href="/projects">Project Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="text">Tilpat Road, Palla, Faridabad,<br>Haryana, India - 121003</div>
+            </li>
+            <li>
+              <div class="icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="text">+91 8368757030</div>
+            </li>
+            <li>
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="text">deepanshwater@gmail.com</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Deepansh Water Solution. All Rights Reserved.</span>
+        <span>Live project access for clients.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox overlay (for photos) -->
+  <div class="db-lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox">
+    <button class="db-lightbox-close" id="lightbox_close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="db-lightbox-nav db-lightbox-prev" id="lightbox_prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <img class="db-lightbox-img" id="lightbox_img" src="" alt="Site photo">
+    <button class="db-lightbox-nav db-lightbox-next" id="lightbox_next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+    <span class="db-lightbox-caption" id="lightbox_caption"></span>
+  </div>
+
+  <script src="../javascript.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
